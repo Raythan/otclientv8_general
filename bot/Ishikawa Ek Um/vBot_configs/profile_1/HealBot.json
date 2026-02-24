@@ -1,0 +1,275 @@
+{
+  "ConditionPanel": {
+    "cureBurn": false,
+    "curseCost": 80,
+    "electrifyCost": 22,
+    "ignoreInPz": true,
+    "bleedCost": 45,
+    "cureCurse": false,
+    "stopHaste": true,
+    "holdHaste": true,
+    "curePosion": false,
+    "hasteSpell": "utani hur",
+    "curePoison": false,
+    "poisonCost": 20,
+    "cureBleed": false,
+    "holdUtura": false,
+    "enabled": true,
+    "cureParalyse": true,
+    "paralyseSpell": "exura ico",
+    "hasteCost": 120,
+    "uturaType": "",
+    "utamoCost": 40,
+    "uturaCost": 100,
+    "cureElectrify": false,
+    "holdUtamo": false,
+    "paralyseCost": 65,
+    "utanaCost": 440,
+    "holdUtana": false,
+    "burnCost": 30
+  },
+  "currentHealBotProfile": 1,
+  "healbot": [
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "itemTable": [
+        {
+          "item": 7643,
+          "value": 70,
+          "index": 1,
+          "enabled": false,
+          "origin": "HP%",
+          "sign": "<"
+        },
+        {
+          "index": 2,
+          "value": 60,
+          "origin": "HP%",
+          "enabled": true,
+          "sign": "<",
+          "item": 7643
+        },
+        {
+          "enabled": true,
+          "origin": "HP%",
+          "value": 80,
+          "item": 239,
+          "index": 17,
+          "sign": "<"
+        },
+        {
+          "item": 239,
+          "value": 70,
+          "index": 3,
+          "enabled": false,
+          "origin": "HP%",
+          "sign": "<"
+        },
+        {
+          "item": 239,
+          "value": 60,
+          "index": 4,
+          "enabled": false,
+          "origin": "HP%",
+          "sign": "<"
+        },
+        {
+          "index": 5,
+          "value": 92,
+          "origin": "HP%",
+          "enabled": false,
+          "sign": "<",
+          "item": 236
+        },
+        {
+          "enabled": true,
+          "value": 85,
+          "origin": "HP%",
+          "item": 236,
+          "index": 6,
+          "sign": "<"
+        },
+        {
+          "item": 236,
+          "value": 60,
+          "index": 7,
+          "enabled": false,
+          "origin": "HP%",
+          "sign": "<"
+        },
+        {
+          "sign": "<",
+          "value": 50,
+          "index": 12,
+          "item": 236,
+          "origin": "HP%",
+          "enabled": false
+        },
+        {
+          "index": 8,
+          "value": 92,
+          "origin": "HP%",
+          "enabled": false,
+          "sign": "<",
+          "item": 266
+        },
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 50,
+          "item": 237,
+          "index": 16,
+          "sign": "<"
+        },
+        {
+          "item": 268,
+          "value": 75,
+          "index": 9,
+          "enabled": false,
+          "origin": "MP%",
+          "sign": "<"
+        },
+        {
+          "index": 10,
+          "value": 60,
+          "origin": "MP%",
+          "enabled": true,
+          "sign": "<",
+          "item": 268
+        },
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 40,
+          "item": 268,
+          "index": 15,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 30,
+          "item": 268,
+          "index": 14,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 20,
+          "item": 268,
+          "index": 13,
+          "sign": "<"
+        },
+        {
+          "sign": "<",
+          "origin": "MP%",
+          "value": 10,
+          "item": 268,
+          "index": 11,
+          "enabled": false
+        }
+      ],
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "enabled": true,
+          "index": 3,
+          "origin": "HP%",
+          "spell": "exura ico",
+          "sign": "<",
+          "value": 80,
+          "cost": 40
+        },
+        {
+          "enabled": false,
+          "value": 60,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura ico",
+          "index": 2,
+          "cost": 40
+        },
+        {
+          "enabled": false,
+          "value": 40,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura ico",
+          "index": 1,
+          "cost": 40
+        }
+      ],
+      "enabled": true,
+      "name": "EK300+",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #2",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #3",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #4",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #5",
+      "Interval": true
+    }
+  ]
+}

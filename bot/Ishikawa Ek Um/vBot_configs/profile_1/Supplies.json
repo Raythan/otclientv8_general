@@ -1,0 +1,52 @@
+{
+  "supplies": {
+    "currentProfile": "EK300+",
+    "EK300+": {
+      "items": {
+        "3191": {
+          "max": 0,
+          "min": 0,
+          "avg": 0
+        },
+        "268": {
+          "max": 0,
+          "min": 0,
+          "avg": 0
+        },
+        "3161": {
+          "max": 0,
+          "min": 0,
+          "avg": 0
+        },
+        "3098": {
+          "max": 10,
+          "min": 0,
+          "avg": 0
+        },
+        "7643": {
+          "max": 200,
+          "min": 50,
+          "avg": 0
+        },
+        "236": {
+          "max": 0,
+          "min": 0,
+          "avg": 0
+        },
+        "237": {
+          "max": 1100,
+          "min": 300,
+          "avg": 0
+        },
+        "239": {
+          "max": 0,
+          "min": 0,
+          "avg": 0
+        }
+      },
+      "capValue": "200",
+      "staminaValue": "0",
+      "capSwitch": true
+    }
+  }
+}
