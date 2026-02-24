@@ -1,18 +1,33 @@
 {
-  "7.9": {
-    "hotkey": "3",
+  "8.10": {
     "type": 2,
     "spellData": {
-      "id": 39,
-      "mana": 100,
+      "id": 93,
+      "words": "exeta res",
       "source": "/images/game/spells/defaultspells",
       "group": [
         3
       ],
       "cd": 2,
+      "clip": "0 256 32 32",
+      "name": "Challenge",
+      "mana": 30
+    }
+  },
+  "7.9": {
+    "hotkey": "3",
+    "type": 2,
+    "spellData": {
+      "mana": 100,
+      "words": "utani gran hur",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        3
+      ],
       "clip": "160 256 32 32",
+      "cd": 2,
       "name": "Strong Haste",
-      "words": "utani gran hur"
+      "id": 39
     }
   },
   "8.7": {
@@ -25,33 +40,33 @@
     "type": 2,
     "hotkey": "2",
     "spellData": {
-      "mana": 20,
+      "id": 1,
       "words": "exura",
       "source": "/images/game/spells/defaultspells",
       "group": [
         2
       ],
-      "clip": "160 0 32 32",
       "cd": 1,
+      "clip": "160 0 32 32",
       "name": "Light Healing",
-      "id": 1
+      "mana": 20
     }
   },
-  "actionbar.1": true,
   "7.7": {
     "hotkey": "",
     "type": 2,
     "spellData": {
-      "mana": 25,
+      "id": 19,
       "words": "exevo flam hur",
       "source": "/images/game/spells/defaultspells",
       "group": [
         1
       ],
-      "clip": "224 96 32 32",
       "cd": 4,
+      "clip": "224 96 32 32",
       "name": "Fire Wave",
-      "id": 19
+      "mana": 25
     }
-  }
+  },
+  "actionbar.1": true
 }
