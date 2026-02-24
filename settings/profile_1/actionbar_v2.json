@@ -1,0 +1,57 @@
+{
+  "7.9": {
+    "hotkey": "3",
+    "type": 2,
+    "spellData": {
+      "id": 39,
+      "mana": 100,
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        3
+      ],
+      "cd": 2,
+      "clip": "160 256 32 32",
+      "name": "Strong Haste",
+      "words": "utani gran hur"
+    }
+  },
+  "8.7": {
+    "hotkey": "1",
+    "action": 4,
+    "type": 3,
+    "itemId": 3161
+  },
+  "7.8": {
+    "type": 2,
+    "hotkey": "2",
+    "spellData": {
+      "mana": 20,
+      "words": "exura",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        2
+      ],
+      "clip": "160 0 32 32",
+      "cd": 1,
+      "name": "Light Healing",
+      "id": 1
+    }
+  },
+  "actionbar.1": true,
+  "7.7": {
+    "hotkey": "",
+    "type": 2,
+    "spellData": {
+      "mana": 25,
+      "words": "exevo flam hur",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "224 96 32 32",
+      "cd": 4,
+      "name": "Fire Wave",
+      "id": 19
+    }
+  }
+}
