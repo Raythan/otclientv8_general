@@ -1,0 +1,287 @@
+{
+  "currentHealBotProfile": 1,
+  "ConditionPanel": {
+    "paralyseSpell": "exura gran",
+    "curseCost": 80,
+    "electrifyCost": 22,
+    "ignoreInPz": true,
+    "bleedCost": 45,
+    "cureCurse": false,
+    "stopHaste": true,
+    "holdHaste": true,
+    "curePosion": false,
+    "hasteSpell": "utani gran hur",
+    "cureParalyse": true,
+    "cureBurn": false,
+    "cureBleed": false,
+    "holdUtura": false,
+    "hasteCost": 100,
+    "utanaCost": 440,
+    "curePoison": false,
+    "utamoCost": 40,
+    "poisonCost": 20,
+    "uturaType": "",
+    "uturaCost": 100,
+    "cureElectrify": false,
+    "holdUtamo": false,
+    "paralyseCost": 65,
+    "enabled": false,
+    "holdUtana": false,
+    "burnCost": 30
+  },
+  "healbot": [
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 70,
+          "item": 238,
+          "index": 1,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 70,
+          "item": 237,
+          "index": 2,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "index": 3,
+          "origin": "MP%",
+          "item": 237,
+          "value": 50,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 75,
+          "sign": "<",
+          "index": 4,
+          "item": 268
+        },
+        {
+          "enabled": false,
+          "origin": "MP%",
+          "value": 70,
+          "item": 268,
+          "index": 5,
+          "sign": "<"
+        },
+        {
+          "enabled": true,
+          "value": 50,
+          "index": 6,
+          "item": 268,
+          "origin": "MP%",
+          "sign": "<"
+        }
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "sign": "<",
+          "value": 60,
+          "origin": "HP%",
+          "enabled": false,
+          "spell": "exura vita",
+          "index": 1,
+          "cost": 160
+        },
+        {
+          "enabled": false,
+          "index": 7,
+          "origin": "HP%",
+          "spell": "exura vita",
+          "sign": "<",
+          "value": 50,
+          "cost": 160
+        },
+        {
+          "sign": "<",
+          "value": 80,
+          "origin": "HP%",
+          "enabled": false,
+          "spell": "exura gran",
+          "index": 2,
+          "cost": 70
+        },
+        {
+          "enabled": false,
+          "index": 6,
+          "origin": "HP%",
+          "spell": "exura gran",
+          "sign": "<",
+          "value": 70,
+          "cost": 70
+        },
+        {
+          "enabled": false,
+          "value": 30,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura gran",
+          "index": 5,
+          "cost": 70
+        },
+        {
+          "sign": "<",
+          "value": 90,
+          "origin": "HP%",
+          "enabled": true,
+          "spell": "exura",
+          "index": 3,
+          "cost": 20
+        },
+        {
+          "enabled": false,
+          "value": 50,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exura",
+          "index": 4,
+          "cost": 20
+        }
+      ],
+      "enabled": true,
+      "name": "ED300+",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 60,
+          "item": 238,
+          "index": 1,
+          "sign": "<"
+        },
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 60,
+          "item": 237,
+          "index": 2,
+          "sign": "<"
+        },
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 65,
+          "item": 268,
+          "index": 3,
+          "sign": "<"
+        }
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "sign": "<",
+          "value": 60,
+          "origin": "HP%",
+          "enabled": true,
+          "spell": "exura vita",
+          "index": 1,
+          "cost": 160
+        },
+        {
+          "sign": "<",
+          "value": 70,
+          "origin": "HP%",
+          "enabled": true,
+          "spell": "exura gran",
+          "index": 2,
+          "cost": 70
+        },
+        {
+          "sign": "<",
+          "value": 90,
+          "origin": "HP%",
+          "enabled": true,
+          "spell": "exura",
+          "index": 3,
+          "cost": 20
+        }
+      ],
+      "enabled": true,
+      "name": "ED100+",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 20,
+          "item": 268,
+          "index": 1,
+          "sign": "<"
+        }
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "sign": "<",
+          "value": 50,
+          "origin": "HP%",
+          "enabled": true,
+          "spell": "exura",
+          "index": 1,
+          "cost": 20
+        }
+      ],
+      "enabled": true,
+      "name": "ED8+",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #4",
+      "Interval": true
+    },
+    {
+      "MessageDelay": false,
+      "Conditions": true,
+      "itemTable": [
+
+      ],
+      "Delay": true,
+      "Visible": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #5",
+      "Interval": true
+    }
+  ]
+}

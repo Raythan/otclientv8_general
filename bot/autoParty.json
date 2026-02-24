@@ -1,0 +1,15 @@
+{
+	"autoParty": {
+    "onMsg": false,
+    "inviteTxt": "ptt",
+    "leaderName": "Ishikawa Ms Um",
+    "enabled": true,
+    "autoShare": true,
+    "autoPartyList": [
+		"Ishikawa Ms Um",
+		"Ishikawa Rp Um",
+		"Ishikawa Ek Um",
+		"Ishikawa Ed Um"
+    ]
+  }
+}

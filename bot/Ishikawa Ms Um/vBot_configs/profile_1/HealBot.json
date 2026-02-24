@@ -1,0 +1,303 @@
+{
+  "ConditionPanel": {
+    "paralyseSpell": "exura gran",
+    "curseCost": 80,
+    "electrifyCost": 22,
+    "ignoreInPz": true,
+    "bleedCost": 45,
+    "cureCurse": false,
+    "stopHaste": true,
+    "utamoCost": 40,
+    "curePosion": false,
+    "hasteSpell": "utani gran hur",
+    "curePoison": false,
+    "cureParalyse": true,
+    "cureBleed": false,
+    "holdUtura": false,
+    "hasteCost": 100,
+    "cureBurn": false,
+    "holdHaste": true,
+    "utanaCost": 440,
+    "uturaType": "",
+    "poisonCost": 20,
+    "uturaCost": 100,
+    "cureElectrify": false,
+    "holdUtamo": false,
+    "paralyseCost": 65,
+    "enabled": true,
+    "holdUtana": false,
+    "burnCost": 30
+  },
+  "currentHealBotProfile": 1,
+  "healbot": [
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "Interval": true,
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "spell": "exura vita",
+          "origin": "HP%",
+          "value": 60,
+          "enabled": false,
+          "sign": "<",
+          "index": 1,
+          "cost": 160
+        },
+        {
+          "spell": "exura gran",
+          "origin": "HP%",
+          "value": 80,
+          "enabled": false,
+          "sign": "<",
+          "index": 2,
+          "cost": 70
+        },
+        {
+          "enabled": true,
+          "index": 7,
+          "origin": "HP%",
+          "spell": "exura gran",
+          "sign": "<",
+          "value": 60,
+          "cost": 70
+        },
+        {
+          "spell": "exura gran",
+          "origin": "HP%",
+          "value": 30,
+          "enabled": false,
+          "sign": "<",
+          "index": 5,
+          "cost": 70
+        },
+        {
+          "spell": "exura",
+          "origin": "HP%",
+          "value": 90,
+          "enabled": true,
+          "sign": "<",
+          "index": 3,
+          "cost": 20
+        },
+        {
+          "enabled": false,
+          "index": 6,
+          "origin": "HP%",
+          "spell": "exura",
+          "sign": "<",
+          "value": 65,
+          "cost": 20
+        },
+        {
+          "spell": "exura",
+          "origin": "HP%",
+          "value": 50,
+          "enabled": false,
+          "sign": "<",
+          "index": 4,
+          "cost": 20
+        }
+      ],
+      "enabled": true,
+      "name": "MS300+",
+      "itemTable": [
+        {
+          "index": 1,
+          "origin": "MP%",
+          "value": 70,
+          "item": 238,
+          "sign": "<",
+          "enabled": false
+        },
+        {
+          "index": 2,
+          "origin": "MP%",
+          "value": 70,
+          "item": 237,
+          "sign": "<",
+          "enabled": false
+        },
+        {
+          "sign": "<",
+          "origin": "MP%",
+          "value": 50,
+          "item": 237,
+          "index": 3,
+          "enabled": true
+        },
+        {
+          "index": 4,
+          "origin": "MP%",
+          "value": 70,
+          "item": 268,
+          "sign": "<",
+          "enabled": false
+        },
+        {
+          "enabled": true,
+          "index": 5,
+          "origin": "MP%",
+          "item": 268,
+          "value": 50,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "index": 6,
+          "origin": "MP%",
+          "item": 268,
+          "value": 30,
+          "sign": "<"
+        },
+        {
+          "enabled": false,
+          "index": 7,
+          "origin": "HP%",
+          "item": 266,
+          "value": 50,
+          "sign": "<"
+        },
+        {
+          "sign": "<",
+          "value": 80,
+          "index": 8,
+          "item": 3160,
+          "origin": "HP%",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "Interval": true,
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "spell": "exura vita",
+          "origin": "HP%",
+          "value": 60,
+          "enabled": false,
+          "sign": "<",
+          "index": 1,
+          "cost": 160
+        },
+        {
+          "spell": "exura gran",
+          "origin": "HP%",
+          "value": 70,
+          "enabled": true,
+          "sign": "<",
+          "index": 2,
+          "cost": 70
+        },
+        {
+          "spell": "exura",
+          "origin": "HP%",
+          "value": 90,
+          "enabled": true,
+          "sign": "<",
+          "index": 3,
+          "cost": 20
+        }
+      ],
+      "enabled": true,
+      "name": "MS100+",
+      "itemTable": [
+        {
+          "index": 1,
+          "origin": "MP%",
+          "value": 60,
+          "item": 238,
+          "sign": "<",
+          "enabled": true
+        },
+        {
+          "index": 2,
+          "origin": "MP%",
+          "value": 60,
+          "item": 237,
+          "sign": "<",
+          "enabled": true
+        },
+        {
+          "index": 3,
+          "origin": "MP%",
+          "value": 65,
+          "item": 268,
+          "sign": "<",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "Interval": true,
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+        {
+          "spell": "exura",
+          "origin": "HP%",
+          "value": 50,
+          "enabled": true,
+          "sign": "<",
+          "index": 1,
+          "cost": 20
+        }
+      ],
+      "enabled": true,
+      "name": "MS8+",
+      "itemTable": [
+        {
+          "index": 1,
+          "origin": "MP%",
+          "value": 20,
+          "item": 268,
+          "sign": "<",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "Interval": true,
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #4",
+      "itemTable": [
+
+      ]
+    },
+    {
+      "MessageDelay": false,
+      "Visible": true,
+      "Interval": true,
+      "Delay": true,
+      "Conditions": true,
+      "Cooldown": true,
+      "spellTable": [
+
+      ],
+      "enabled": false,
+      "name": "Profile #5",
+      "itemTable": [
+
+      ]
+    }
+  ]
+}

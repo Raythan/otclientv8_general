@@ -1,0 +1,598 @@
+{
+  "UP7Text": "magia 6",
+  "ativo3Text": "tempo da magia ativa",
+  "fugaa": {
+    "max": 60,
+    "title": "HP%",
+    "on": true,
+    "min": 0,
+    "text": "dragon immunity"
+  },
+  "pp": "270",
+  "magia2Text": "Nome da magia!",
+  "jewelleryEquipper": {
+    "ringMin": 30,
+    "ammyValue": "HP",
+    "ammyMin": 30,
+    "ringEnabled": false,
+    "valueAmmy": false,
+    "ringValue": "HP",
+    "ringMax": 80,
+    "valueRing": false,
+    "ringId": 3048,
+    "ammyId": 3081,
+    "safeMin": 30,
+    "ammySwitch": true,
+    "ringSwitch": true,
+    "ammyMax": 80,
+    "safe": true
+  },
+  "ativo1Text": "5000",
+  "autoHealthItemPanel2": {
+    "max": 60,
+    "item": 266,
+    "min": 0
+  },
+  "yy3Text": "posiçao para os lados",
+  "autoAntiParalyzeText": "kai",
+  "autoManaItemPanel2": {
+    "max": 60,
+    "item": 268,
+    "min": 0
+  },
+  "yyText": "posiçao para os lados",
+  "Combo10Text": "magia 6",
+  "magia4Text": "Nome da magia!",
+  "fugaa4": {
+    "max": 40,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "nome4Text": "Texto",
+  "_icons": {
+    "FollowAtack": {
+      "y": 0.5952380952381,
+      "x": 0.0054127198917456,
+      "enabled": false
+    },
+    "COMBO": {
+      "y": 0.14630872483221,
+      "x": 0.0078299776286353,
+      "enabled": false
+    },
+    "Buff": {
+      "y": 0.4992927864215,
+      "x": 0,
+      "enabled": false
+    },
+    "pot": {
+      "y": 0.083451202263083,
+      "x": 0.10588235294118,
+      "enabled": true
+    },
+    "Travar Target": {
+      "y": 0.043859649122807,
+      "x": 0.07510148849797,
+      "enabled": true
+    },
+    "Anti-Push": {
+      "y": 0.31006711409396,
+      "x": 0,
+      "enabled": false
+    },
+    "UP": {
+      "y": 0.18104667609618,
+      "x": 0,
+      "enabled": false
+    },
+    "Bug Map": {
+      "y": 0.31275167785235,
+      "x": 0.013422818791946,
+      "enabled": false
+    },
+    "Summon": {
+      "y": 0.29278642149929,
+      "x": 0,
+      "enabled": false
+    },
+    "Treino": {
+      "y": 0.45369127516779,
+      "x": 0.0033557046979866,
+      "enabled": false
+    },
+    "BufF": {
+      "y": 0.28822055137845,
+      "x": 0.080514208389716,
+      "enabled": true
+    },
+    "DANCE": {
+      "y": 0.61073825503356,
+      "x": 0,
+      "enabled": false
+    },
+    "=D": {
+      "y": 0.85,
+      "x": 0.01,
+      "enabled": false
+    },
+    "Sense": {
+      "y": 0.4002828854314,
+      "x": 0,
+      "enabled": false
+    },
+    "teste": {
+      "y": 0.18295739348371,
+      "x": 0.081867388362652,
+      "enabled": true
+    },
+    "Combo": {
+      "y": 0.073550212164074,
+      "x": 0,
+      "enabled": false
+    },
+    "POT": {
+      "y": 0.60961810466761,
+      "x": 0.25058823529412,
+      "enabled": false
+    }
+  },
+  "healing1": {
+    "max": 90,
+    "title": "HP%",
+    "on": false,
+    "min": 51,
+    "text": "regeneration"
+  },
+  "Combo2Text": "magia 3",
+  "autofollow": {
+    "player": "Nome"
+  },
+  "zz": "justified",
+  "fugaa5": {
+    "max": 40,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "fugaa2": {
+    "max": 30,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "atalho": "F1",
+  "timers": {
+    "time": 3
+  },
+  "autoAjudaMessage": "I'm using OTClientV8!",
+  "autoHelpMessage": "hi",
+  "Scriptss": [
+
+  ],
+  "fugaa3": {
+    "max": 40,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "isUsing": false,
+  "tempo3Text": "tempo da magia",
+  "nome3Text": "Texto",
+  "listt": {
+    "Combo": "senei jashu"
+  },
+  "supplies": {
+    "imbues": false,
+    "item6": 0,
+    "ammoBp": 0,
+    "item2Min": 0,
+    "runeBp": 0,
+    "item3Min": 0,
+    "item1Min": 0,
+    "item7Max": 0,
+    "item6Max": 0,
+    "item2": 0,
+    "sortSupplies": false,
+    "item6Min": 0,
+    "potionBp": 0,
+    "SoftBoots": false,
+    "item5Max": 0,
+    "item1": 0,
+    "item5Min": 0,
+    "item4Max": 0,
+    "item4Min": 0,
+    "capValue": 0,
+    "item3Max": 0,
+    "item2Max": 0,
+    "staminaSwitch": false,
+    "item5": 0,
+    "staminaValue": 900,
+    "capSwitch": false,
+    "item1Max": 0,
+    "item7": 0,
+    "item3": 0,
+    "item4": 0
+  },
+  "buff2": "Buff 2",
+  "autoVendasMessage": "I'm using OTClientV8!",
+  "UP4Text": "magia 4",
+  "buff3": "Buff 3",
+  "summonText": "Nome da magia de summon !",
+  "Combo5Text": "magia 1",
+  "UP1Text": "magia 1",
+  "heal": {
+    "max": 99,
+    "title": "HP%",
+    "on": true,
+    "min": 0,
+    "text": "dragon regeneration"
+  },
+  "autoEquip": [
+    {
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 9
+    },
+    {
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 0
+    }
+  ],
+  "pc": "667",
+  "ingame_hotkeys2": "",
+  "tempo1Text": "30000",
+  "_configs": {
+    "targetbot_configs": {
+      "enabled": true,
+      "selected": "others"
+    },
+    "cavebot_configs": {
+      "enabled": false
+    }
+  },
+  "nome1Text": "Inmortal",
+  "Combo7Text": "magia 3",
+  "timeee5": 603865,
+  "z1Text": "320",
+  "z3Text": "posiçao para cima / baixo",
+  "ativo4Text": "tempo da magia ativa",
+  "ativoText": "tempo da magia ativa",
+  "fuga": {
+    "max": 20,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "magia de fuga !"
+  },
+  "yy2Text": "posiçao para os lados",
+  "Combo9Text": "magia 5",
+  "ingame_hotkeys": "macro(200, \"Executed\", function()  if g_game.isAttacking() and g_game.getAttackingCreature():getHealthPercent() < 60 then\n\nsay('howling magic')\nend \nend)\n\nteuIcone = addIcon(\"Travar Target\", {item=10607, text=\"Travar Target\", hotkey=\"F8\"},\nmacro(100, \"Hold Target [ESC]\", nil, function()\n  if g_game.isAttacking() \nthen\n oldTarget = g_game.getAttackingCreature()\n  end\n  if (oldTarget and oldTarget:getPosition()) \nthen\n if (not g_game.isAttacking() and getDistanceBetween(pos(), oldTarget:getPosition()) <= 8) then\n\nif (oldTarget:getPosition().z == posz()) then\n        g_game.attack(oldTarget)\n      end\n    end\n  end\nend))\n\nteuIcone:breakAnchors();\nteuIcone:move(150,200);\n\nteuIcone = addIcon(\"FollowAtack\", {item=11775, text=\"FollowAtack\", },macro(250, \"Atacar Seguindo\", function()\n   if g_game.isOnline() then\n         g_game.setChaseMode(1)\n           end\n \nend))\nteuIcone:breakAnchors();\nteuIcone:move(150,350);\n\nmacro(1, \"Enemy\", function()\n for _,pla in ipairs(getSpectators(posz())) do\n attacked = g_game.getAttackingCreature()\n  if (not attacked or (attacked and (not attacked:isPlayer() or (pla:getHealthPercent() < attacked:getHealthPercent())))) and pla:isPlayer() and pla:getEmblem() ~= 1 then \n   g_game.attack(pla)\n  end\n end\nend)\n\nlocal castBelowHp = 83\nlocal deactiveBelowMana = 65\nmacro(200, \"Reiatsu Shield\",  function()\n  if (hppercent() <= castBelowHp and manapercent() >= deactiveBelowMana and not hasManaShield()) then\n    say('magic shield')\n  end\n  if (manapercent() <= deactiveBelowMana and  hppercent() >= castBelowHp and hasManaShield()) then\n      say('magic cancel')\n  end\nend)\n\nteste = addIcon(\"teste\", {item =1949, text = \"..::Combo::..\"},\nmacro(200, \"..::Combo::..\", function() \n\n  if g_game.isAttacking() then\n    if not modules.corelib.g_keyboard.isKeyPressed('1') then\n       say(\"rugido do dragao apocaliptico\")\n       say(\"draco meteor\")\n       say(\"dragon rage\")\n       say(\"dragon rush\")\n\n    else\n      say(\"dragon immunity\")\n      \n   \n\n\n    end \nend\nend))\nteste:breakAnchors()\nteste:move(50, 40)\n\nmacro(500, \"Stamina\", function()\nif stamina() < 2400 then\nuse(11588)\nend\nend) \n\nteuIcone = addIcon(\"BufF\", {item=12931, text=\"BufF\"},macro(200, \"BufF\", function() \nsay('dragon mode') \nsay('dragon force') \nend))\nteuIcone:breakAnchors();\nteuIcone:move(50,110)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "TimeRemain": 0,
+  "yy1Text": "500",
+  "ativo2Text": "tempo da magia ativa",
+  "UP5Text": "magia em area !",
+  "nomeText": "Texto",
+  "magia3Text": "Nome da magia!",
+  "autoEquipItem4": {
+    "slot": 1
+  },
+  "autoHealthItemPanel1": {
+    "max": 60,
+    "item": 3161,
+    "min": 0,
+    "enabled": true
+  },
+  "Kunai": "ID da kunai",
+  "zz3Text": "posiçao para cima / baixo",
+  "Fuga": "Heeey",
+  "ComboText": "magia 1",
+  "z2Text": "posiçao para cima / baixo",
+  "magia1Text": "laplace protection",
+  "dText": "posiçao para cima / baixo",
+  "autoHasteText": "speed up",
+  "doorIdss": [
+    {
+      "count": 1,
+      "id": 7771
+    }
+  ],
+  "autoManaItemPanel1": {
+    "max": 60,
+    "item": 3149,
+    "min": 0,
+    "enabled": true
+  },
+  "UP2Text": "magia 2",
+  "monsterKill": {
+    "min": false
+  },
+  "Combo8Text": "magia 4",
+  "foodItems": [
+    {
+      "count": 1,
+      "id": 3577
+    }
+  ],
+  "healing2": {
+    "max": 50,
+    "title": "HP%",
+    "on": true,
+    "min": 0,
+    "text": "kawarimi no jutsu defensive"
+  },
+  "nome2Text": "Texto",
+  "heal2": {
+    "max": 99,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "regeneration"
+  },
+  "Combo55Text": "magia 6",
+  "autoEquipItem2": {
+    "slot": 1
+  },
+  "autoEatingPanel1": {
+    "items": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "ManatrainText": "chakra down",
+  "autoEatingPanel2": {
+    "items": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "OpenPrivateTabs": false,
+  "tt": "Tempo do PK",
+  "magiaText": "Nome da magia!",
+  "yy4Text": "posiçao para os lados",
+  "zText": "posiçao para cima / baixo",
+  "sensePlayer": "lewiz",
+  "autoEquipItem1": {
+    "enabled": false,
+    "item1": 0,
+    "slot": 6,
+    "item2": 0
+  },
+  "pkz": "Tempo PK 1 minuto = 60",
+  "_macros": {
+    "": true,
+    "Follow Change": false,
+    "Buff": false,
+    "..::Combo Garou::..": true,
+    "Auto Haste": true,
+    "Bug WASD": false,
+    "Anti-Push": true,
+    "UP": false,
+    "Dançar": false,
+    "Summon": false,
+    "Sense Target": false,
+    "Anti Paralyze": false,
+    "Bug Setas": false,
+    "Monstro Vida %": false,
+    "Combo": false,
+    "=D": false,
+    "auto follow": false,
+    "Msg trade": false,
+    "Monster HP %": false,
+    "Sense": false,
+    "SENSE": false,
+    "Atacar Seguindo": false,
+    "Hold Target [ESC]": true,
+    "Dance": false,
+    "Executed": false,
+    "Follow": false,
+    "Auto Jam": false,
+    "Treinar Mana": false,
+    "Reiatsu Shield": true,
+    "Buff 2": false,
+    "Money": false,
+    "Dash Kunai": false,
+    "BugMap": true,
+    "Auto Loot Look": false,
+    "testing": true,
+    "Attack LOW HP": false,
+    "sense": true,
+    "Msg Help": false,
+    "Stamina": true,
+    "Bug Map": false,
+    "Kawarimi": false,
+    "Puxar itens": false,
+    "Dash": false,
+    "Cronometro": false,
+    "Bug Numpad": false,
+    "BufF": true,
+    "..::Combo::..": true,
+    "Auto Bless": true,
+    "mana shield": false,
+    "Dash Sushin": false,
+    "Auto JUMP": false,
+    "Treino": false,
+    "VIRAR N/ALVO": true,
+    "Follow Attack": false,
+    "Treinar": false,
+    "Reta Atk": false
+  },
+  "tempo2Text": "tempo da magia",
+  "TreinarText": "power down",
+  "tempo4Text": "tempo da magia",
+  "id": 268435691,
+  "antiPushPanel": {
+    "lastItem": 2,
+    "enabled": false,
+    "items": [
+      3031,
+      3035,
+      0,
+      0,
+      0
+    ]
+  },
+  "Combo1Text": "magia 2",
+  "attacked": [
+
+  ],
+  "killedCreatures": {
+    "Severium Snake": 62,
+    "Bandit": 9,
+    "Shinobi Renegade": 912,
+    "saiken": 1,
+    "Gamaguren": 9,
+    "nightmare": 5,
+    "tobi": 8,
+    "beaver": 26,
+    "boxer": 3,
+    "Groudon": 1,
+    "arlequin": 7,
+    "gaara": 16,
+    "Katon Shinobi": 7,
+    "Rat": 1,
+    "Ocult Shinobi": 3414,
+    "Spy Oto no Kuni": 2,
+    "Itachi susanoo": 60,
+    "Stealth Sand": 10,
+    "Dark Snake": 4,
+    "wolf": 56,
+    "Wolf": 6,
+    "Bandit Nekromen": 8,
+    "ultimate fusion": 143,
+    "Goupa Assasin": 2,
+    "hell ulquiorra lll": 10,
+    "nukenin": 32,
+    "fode quest ll": 76,
+    "Lavernoide": 3,
+    "Human": 2,
+    "Master Anbu": 159,
+    "old namekjin": 7,
+    "fode quest": 35,
+    "Frozen Monster": 9,
+    "Ocult samurai": 54,
+    "bandit": 5
+  },
+  "manatrainer": {
+    "max": 90,
+    "title": "mana%",
+    "on": false,
+    "min": 0,
+    "text": "magic down"
+  },
+  "autoEquipItem3": {
+    "slot": 1
+  },
+  "extras": [
+
+  ],
+  "UP6Text": "magia 5",
+  "timeee": 1604040,
+  "z4Text": "posiçao para cima / baixo",
+  "advancedFriendHealer": {
+    "minMana": 2,
+    "itemHeal": false,
+    "minFriendHp": 40,
+    "id": 266,
+    "spellHeal": false,
+    "enabled": false,
+    "distance": 3,
+    "spellName": "magia de cura"
+  },
+  "afkMsg": "MENSAGEM",
+  "fuga2": {
+    "max": 30,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "magia de fuga !"
+  },
+  "tempoText": "tempo da magia",
+  "doorIds": [
+    {
+      "id": 5258,
+      "count": 1
+    }
+  ],
+  "UP3Text": "magia 3",
+  "healing4": {
+    "max": 35,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "healing3": {
+    "max": 20,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "autoHealthPanel1": {
+    "max": 99,
+    "item": 266,
+    "enabled": false,
+    "min": 0,
+    "text": "big regeneration"
+  },
+  "Combo4Text": "magia 5",
+  "superDash": false,
+  "fuga3": {
+    "max": 40,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "magia de fuga !"
+  },
+  "alarms": {
+    "playerpk": false,
+    "playerDetected": false,
+    "privateMessage": false,
+    "healthValue": 44,
+    "creatureDetected": false,
+    "manaValue": 54,
+    "playerAttack": false,
+    "healthBelow": false,
+    "playerDetectedLogout": false,
+    "manaBelow": false,
+    "messageText": "Nome do loot",
+    "bossName": "nome do monstro",
+    "enabled": false,
+    "warnBoss": false,
+    "warnMessage": false
+  },
+  "playerList": {
+    "enemyList": [
+
+    ],
+    "outfits": false,
+    "groupMembers": false,
+    "marks": false,
+    "blackList": [
+
+    ],
+    "friendList": [
+
+    ]
+  },
+  "buff": "Buff 1",
+  "Combo3Text": "magia 4",
+  "autoTradeMessage": "hi ",
+  "Combo6Text": "magia 2"
+}

@@ -1,0 +1,459 @@
+{
+  "yy2Text": "posi�ao para os lados",
+  "Combo9Text": "magia 5",
+  "UP7Text": "",
+  "ingame_hotkeys": "macro(500, \"SD Target\", function()\n    if not g_game.isAttacking() then return end\n    if not g_game.getAttackingCreature():canShoot() then return end\n        useWith(tonumber(storage.runeTarget), g_game.getAttackingCreature())\n        delay(500)\nend)\n\nUI.TextEdit(storage.runeTarget or \"3150\", function(widget, text)\n    storage.runeTarget = text\nend)\nUI.Separator()\n\nlocal antiBot = macro(3000, \"anti-bot\", function() end) onTextMessage(function(mode, text)     if text:find('para nao ser movido para o templo!') then         say(text:split(' ')[3])     end end)\n\n\nmacro(1000, \"Abrir Bag Principal\", function()\n    bpItem = getBack()\n    bp = getContainer(0)\n\n    if not bp and bpItem ~= nil then\n        g_game.open(bpItem)\n    end\n\nend)\n\n\n\n\n\n\n\n\n\nlocal interface = modules.game_interface\nlocal leftPanel = interface:getLeftPanel()\nleftPanel:setWidth(210)\n\nmacro(2000, \"Use Itens ao Redor v3\", function()\n  local myPos = pos()\n  \n  for x = -1, 1 do\n    for y = -1, 1 do\n      local tile = g_map.getTile({x = myPos.x + x, y = myPos.y + y, z = myPos.z})\n      \n      if tile then\n        local thing = tile:getTopUseThing()\n        -- Se houver algo no topo e n�o for o ch�o/piso (ID do ch�o costuma ser o primeiro item)\n        if thing and thing:isItem() and not thing:isGround() then\n          use(thing)\n        end\n      end\n    end\n  end\nend)\n\n------------------------------------------------------\nlocal secondsToIdle = 5\nlocal activeFPS =  20\n---------------------------------------------------------\n\nlocal afkFPS = 0\nfunction botPrintMessage(message)\n  modules.game_textmessage.displayGameMessage(message)\nend\n\nbotPrintMessage(\"[Idle-Mode] made by: VivoDibra#1182\")\n\nlocal function isSameMousePos(p1,p2)\n  return p1.x == p2.x and p1.y == p2.y\nend\n\nlocal function setAfk()\n  modules.client_options.setOption(\"backgroundFrameRate\", afkFPS)\n  modules.game_interface.gameMapPanel:hide()\nend\n\nlocal function setActive()\n  modules.client_options.setOption(\"backgroundFrameRate\", activeFPS)\n  modules.game_interface.gameMapPanel:show()\nend\n\nlocal lastMousePos = nil\nlocal finalMousePos = nil\nlocal idleCount = 0\nlocal maxIdle = secondsToIdle * 4\nmacro(300, \"Idle Mode\", function()\n  local currentMousePos = g_window.getMousePosition()\n\n  if finalMousePos then\n    if isSameMousePos(finalMousePos,currentMousePos) then return end\n    botPrintMessage(\"(Idle Mode) Active!\")\n    setActive()\n    finalMousePos = nil\n  end\n\n  if lastMousePos and isSameMousePos(lastMousePos,currentMousePos) then\n    idleCount = idleCount + 1\n  else\n    lastMousePos = currentMousePos\n    idleCount = 0\n  end\n\n  if idleCount == maxIdle then\n    botPrintMessage(\"(Idle Mode) AFK!\")\n    setAfk()\n    finalMousePos = currentMousePos\n    idleCount = 0\n  end\n\nend)",
+  "ativo3Text": "tempo da magia ativa",
+  "yy1Text": "posi�ao para os lados",
+  "fugaa": {
+    "max": 20,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "pp": "Posi��o da tela x",
+  "magia2Text": "Nome da magia!",
+  "ativo2Text": "tempo da magia ativa",
+  "UP5Text": "",
+  "ativo1Text": "tempo da magia ativa",
+  "manatrainer": {
+    "max": 90,
+    "title": "mana%",
+    "on": false,
+    "min": 0,
+    "text": "Treinar Mana"
+  },
+  "autoHealthItemPanel2": {
+    "max": 60,
+    "item": 3200,
+    "min": 0
+  },
+  "yy3Text": "posi�ao para os lados",
+  "manaShield": "utamo vita",
+  "autoManaItemPanel2": {
+    "max": 60,
+    "item": 268,
+    "min": 0
+  },
+  "yyText": "posi�ao para os lados",
+  "Combo10Text": "magia 6",
+  "autoHealthItemPanel1": {
+    "max": 99,
+    "item": 3160,
+    "min": 0,
+    "enabled": false
+  },
+  "runeTarget": "3154",
+  "foodItems": [
+    {
+      "id": 3582,
+      "count": 1
+    },
+    {
+      "id": 3577,
+      "count": 1
+    },
+    {
+      "id": 3725,
+      "count": 1
+    }
+  ],
+  "UP3Text": "",
+  "_macros": {
+    "": false,
+    "follow target": false,
+    "anti-bot": false,
+    "Auto Loot Look": false,
+    "Auto Haste": false,
+    "Use Itens ao Redor v3": false,
+    "Idle Mode": false,
+    "SD Target": false,
+    "UP": false,
+    "Summon": false,
+    "Follow Ataque": false,
+    "Atacar Monstros": false,
+    "Sense Target": false,
+    "Combo": false,
+    "Auto Buff": false,
+    "haste": false,
+    "HP on Friends": false,
+    "eat food": true,
+    "mana shield": false,
+    "Rune Maker": false,
+    "Regen": false,
+    "Buff": false,
+    "Bug Map": false,
+    "Converter Dinheiro": false,
+    "Abrir Bag Principal": false,
+    "Monstro Vida %": false
+  },
+  "Combo3Text": "",
+  "autoEatingPanel2": {
+    "items": [
+      3725,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "delayuh": "1",
+  "uh": "3160",
+  "hpitem1": {
+    "max": 90,
+    "title": "HP%",
+    "subType": 0,
+    "item": 266,
+    "min": 51,
+    "on": false
+  },
+  "Combo4Text": "",
+  "ComboText": "exevo mas vita",
+  "z2Text": "posi�ao para cima / baixo",
+  "magia4Text": "Nome da magia!",
+  "fugaa4": {
+    "max": 40,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "doorIds": [
+    {
+      "count": 1,
+      "id": 5129
+    },
+    {
+      "count": 1,
+      "id": 5102
+    },
+    {
+      "count": 1,
+      "id": 5111
+    },
+    {
+      "count": 1,
+      "id": 5120
+    },
+    {
+      "count": 1,
+      "id": 11246
+    }
+  ],
+  "nome4Text": "Texto",
+  "_icons": {
+    "Summon": {
+      "y": 0.20197044334975,
+      "x": 0.096286107290234,
+      "enabled": false
+    },
+    "Sense": {
+      "y": 0.05,
+      "x": 0.01,
+      "enabled": false
+    },
+    "Buff": {
+      "y": 0.059113300492611,
+      "x": 0.14167812929849,
+      "enabled": false
+    },
+    "UP": {
+      "y": 0.04679802955665,
+      "x": 0.071526822558459,
+      "enabled": false
+    },
+    "Combo": {
+      "y": 0.18472906403941,
+      "x": 0.016506189821183,
+      "enabled": false
+    }
+  },
+  "yy4Text": "posi�ao para os lados",
+  "Combo2Text": "exana res mas drain",
+  "autoHasteText": "utani gran hur",
+  "autofollow": {
+    "player": "G Hub"
+  },
+  "autoAntiParalyzeText": "utani hur",
+  "doorIdss": [
+    {
+      "count": 1,
+      "id": 5129
+    },
+    {
+      "count": 1,
+      "id": 5102
+    },
+    {
+      "count": 1,
+      "id": 5111
+    },
+    {
+      "count": 1,
+      "id": 5120
+    },
+    {
+      "count": 1,
+      "id": 11246
+    }
+  ],
+  "fugaa5": {
+    "max": 40,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "autoManaItemPanel1": {
+    "max": 80,
+    "item": 3181,
+    "min": 0,
+    "enabled": false
+  },
+  "fugaa2": {
+    "max": 30,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "UP2Text": "",
+  "magia3Text": "Nome da magia!",
+  "autoEatingPanel1": {
+    "items": [
+      3725,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "atalho": "F9",
+  "timers": {
+    "time": 1
+  },
+  "z4Text": "posi�ao para cima / baixo",
+  "autoHelpMessage": "hi",
+  "monsterKill": {
+    "min": false
+  },
+  "Scriptss": [],
+  "fugaa3": {
+    "max": 40,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "fuga"
+  },
+  "isUsing": false,
+  "hasteSpell": "utani mas hur",
+  "healing2": {
+    "max": 50,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "exura vita"
+  },
+  "pkz": "Tempo do PK 1 minuto = 60",
+  "nome3Text": "Texto",
+  "manaitem2": {
+    "max": 50,
+    "title": "MP%",
+    "subType": 0,
+    "item": 3157,
+    "min": 0,
+    "on": false
+  },
+  "listt": [],
+  "friendNameh": "G Hub",
+  "Combo1Text": "exevo ina san",
+  "buff2": "exana gran mas hur",
+  "antiParalyze": "utani hur",
+  "Combo55Text": "",
+  "tempo3Text": "tempo da magia = 1000 = 1 segundo",
+  "autoEquipItem2": {
+    "slot": 1
+  },
+  "autoEquipItem4": {
+    "slot": 1
+  },
+  "heal2": {
+    "max": 99,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "regeneration"
+  },
+  "summonText": "Nome da magia de summon!",
+  "autoEquipItem1": {
+    "item1": 3052,
+    "slot": 9,
+    "item2": 3089
+  },
+  "UP4Text": "",
+  "magiaText": "Nome da magia!",
+  "manaitem1": {
+    "max": 87,
+    "title": "MP%",
+    "subType": 1,
+    "item": 11771,
+    "min": 0,
+    "on": false
+  },
+  "zText": "posi�ao para cima / baixo",
+  "Combo5Text": "magia 1",
+  "UP1Text": "exevo mas vita",
+  "magia1Text": "Nome da magia!",
+  "nomeText": "Texto",
+  "tempo2Text": "tempo da magia = 1000 = 1 segundo",
+  "killedCreatures": {
+    "Second General": 1,
+    "dark warlock": 14,
+    "rotworm": 2,
+    "Dark Wisdow": 1,
+    "fire elemental": 2,
+    "Apocalypse": 1,
+    "Shadow Balrog": 3,
+    "hydra": 2,
+    "wolf": 1,
+    "Venom Balrog": 2,
+    "dark torturer": 1,
+    "destroyer": 2,
+    "Thalas": 1,
+    "gargoyle": 4
+  },
+  "tempo4Text": "tempo da magia = 1000 = 1 segundo",
+  "heal": {
+    "max": 99,
+    "title": "HP%",
+    "on": false,
+    "min": 0,
+    "text": "utamo vita"
+  },
+  "autoTradeMessage": "hi ",
+  "Combo6Text": "magia 2",
+  "autoEquip": [
+    {
+      "item1": 3052,
+      "title": "Auto Equip",
+      "item2": 3089,
+      "on": false,
+      "slot": 9
+    },
+    {
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 0
+    },
+    {
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 0
+    },
+    {
+      "item1": 0,
+      "title": "Auto Equip",
+      "item2": 0,
+      "on": false,
+      "slot": 0
+    }
+  ],
+  "pc": "Posi��o da tela y",
+  "Combo8Text": "magia 4",
+  "autoEquipItem3": {
+    "slot": 1
+  },
+  "ingame_hotkeys2": "\nmacro(10000, \"Regen\", function()\nif not hasPartyBuff() then\n  say(\"Exura Gran Mas Regen\")\n  end\nend)\n\n\n\n\nmacro(34000, \"Auto Buff\", function()\nif not hasPartyBuff() then\n  say(\"exana gran mas hur\")\nend\nend)\n\n\n\nlocal manaCost = 8500\nlocal rune = 'adori vita dark dec'\nlocal backpackId = 3154\n\nlocal openNextBP =  function()\n  local containers = getContainers()\n  for i, container in pairs(containers) do\n    if container:getItemsCount() == container:getCapacity() then\n      for _, item in ipairs(container:getItems()) do\n        if item:isContainer() then\n          g_game.open(item, container)\n        end\n      end\n    end\n  end\nend\n\nlocal runeMaker = function()\n if(getRight() == nil) then\n    say ('adori blank')\n    if mana() >= manaCost then\n      say(rune)\n    end\nend\nend\n\nlocal moveItemRightToBackpack = function()\n    local item = getRight()\n    if not item then return true end\n    if item:getId() == backpackId then\n        local dest\n        for i, container in pairs(g_game.getContainers()) do\n            local cname = container:getName():lower()\n            if container:getCapacity() > #container:getItems() and not cname:find(\"dead\") and not cname:find(\"depot\") and not cname:find(\"quiver\") then\n                dest = container\n            end\n            break\n        end\n\n        if not dest then return true end\n        local pos = dest:getSlotPosition(dest:getCapacity())\n        g_game.move(item, pos, item:getCount())\n    end\n  end\n\nmacro(5000, \"Rune Maker\", function()\n    openNextBP()\n    runeMaker()\n    moveItemRightToBackpack()\n  end)\n\n\n\nmacro(100, \"HP on Friends\", function()\n  local friendPercent = tonumber(storage.hpfriendh)\n  local friends = string.split(storage.friendNameh, \"\\n\")\n  for i, spec in pairs(getSpectators()) do \n    if table.contains(friends, spec:getName(), true) then \n      if spec:getHealthPercent() <= friendPercent then\n        useWith(tonumber(storage.uh), spec)\n        delay(tonumber(storage.delayuh))\n      end\n    end\n  end\nend)\n\nUI.Label(\"Friend Heal\")\n\nUI.TextEdit(storage.hpfriendh or \"85\", function(widget, text)\n  storage.hpfriendh = text\nend)\n\nUI.Label(\"Potion ID\")\n\nUI.TextEdit(storage.uh or \"238\", function(widget, text)\n  storage.uh = text\nend)\n\nUI.Label(\"Potion Use Delay\")\n\nUI.TextEdit(storage.delayuh or \"1000\", function(widget, text)\n  storage.delayuh = text\nend)\n\nUI.Button(\"Friend List\", function(newText) \n  UI.MultilineEditorWindow(storage.friendNameh or \"\", {title=\"Friend List UH\", description=\"Friend list UH\\nExample:\\nPlayer1\\nPlayer2\\nPlayer3\"}, function(text)\n    storage.friendNameh = text\n  end)\nend)\n\n\nlocal toFollow = \"G Tech\" -- nome do jogador \nlocal toFollowPos = {nick}\n\nlocal followMacro = macro(200, \"follow target\", function()\n  local target = getCreatureByName(toFollow)\n  if target then\n    local tpos = target:getPosition()\n    toFollowPos[tpos.z] = tpos\n  end\n  if player:isWalking() then return end\n  local p = toFollowPos[posz()]\n  if not p then return end\n  if autoWalk(p, 20, {ignoreNonPathable=true, precision=1}) then\n    delay(100)\n  end\nend)\n\nonCreaturePositionChange(function(creature, oldPos, newPos)\n  if creature:getName() == toFollow then\n    toFollowPos[newPos.z] = newPos\n  end\nend)",
+  "UP6Text": "",
+  "buff3": "",
+  "hpitem2": {
+    "max": 50,
+    "title": "HP%",
+    "subType": 0,
+    "item": 3160,
+    "min": 0,
+    "on": false
+  },
+  "advancedFriendHealer": {
+    "minMana": 20,
+    "itemHeal": true,
+    "minFriendHp": 99,
+    "id": 3160,
+    "enabled": false,
+    "distance": 8,
+    "spellHeal": true,
+    "spellName": "exura sio"
+  },
+  "afkMsg": "MENSAGEM",
+  "tempo1Text": "tempo da magia = 1000 = 1 segundo",
+  "tempoText": "tempo da magia = 1000 = 1 segundo",
+  "_configs": {
+    "targetbot_configs": {
+      "selected": "All",
+      "enabled": true
+    },
+    "cavebot_configs": {
+      "selected": "rot",
+      "enabled": false
+    }
+  },
+  "nome1Text": "Texto",
+  "Combo7Text": "magia 3",
+  "hpfriendh": "99",
+  "z1Text": "posi�ao para cima / baixo",
+  "z3Text": "posi�ao para cima / baixo",
+  "ativo4Text": "tempo da magia ativa",
+  "healing1": {
+    "max": 90,
+    "title": "HP%",
+    "on": false,
+    "min": 51,
+    "text": "exura"
+  },
+  "alarms": {
+    "playerpk": true,
+    "playerDetected": false,
+    "privateMessage": false,
+    "healthValue": 40,
+    "healthBelow": false,
+    "playerAttack": false,
+    "playerDetectedLogout": false,
+    "bossName": "[B]",
+    "manaBelow": true,
+    "messageText": "",
+    "manaValue": 100,
+    "enabled": false,
+    "warnBoss": false,
+    "creatureDetected": false
+  },
+  "playerList": {
+    "enemyList": [],
+    "outfits": false,
+    "groupMembers": true,
+    "marks": false,
+    "blackList": [],
+    "friendList": []
+  },
+  "buff": "exana mas hur",
+  "ativoText": "tempo da magia ativa",
+  "OpenPrivateTabs": false,
+  "nome2Text": "Texto",
+  "autoParty": {
+    "onMsg": false,
+    "inviteTxt": "ptt",
+    "leaderName": "Ishikawa Ms Um",
+    "enabled": true,
+    "autoShare": true,
+    "autoPartyList": [
+      "Ishikawa Ms Um",
+      "Ishikawa Rp Um",
+      "Ishikawa Ek Um",
+      "Ishikawa Ed Um"
+    ]
+  }
+}
