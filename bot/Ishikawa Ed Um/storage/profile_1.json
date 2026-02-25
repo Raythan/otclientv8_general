@@ -3104,7 +3104,7 @@
     "bless": true
   },
   "_macros": {
-    "": true,
+    "": false,
     "Follow": false,
     "Coletar": false,
     "Eat Food": true,
