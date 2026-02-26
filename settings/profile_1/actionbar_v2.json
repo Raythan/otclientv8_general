@@ -1,6 +1,256 @@
 {
+  "9.9": {
+    "type": 2,
+    "spellData": {
+      "mana": 100,
+      "words": "utani tempo hur",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        3
+      ],
+      "clip": "32 256 32 32",
+      "cd": 2,
+      "name": "Charge",
+      "id": 131
+    }
+  },
+  "8.9": {
+    "type": 2,
+    "spellData": {
+      "mana": 400,
+      "words": "utamo tempo san",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        3,
+        1
+      ],
+      "clip": "320 288 32 32",
+      "cd": 2,
+      "name": "Swift Foot",
+      "id": 134
+    }
+  },
   "actionbar.1": true,
+  "7.12": {
+    "type": 2,
+    "spellData": {
+      "mana": 210,
+      "words": "exevo tera hur",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "320 96 32 32",
+      "cd": 4,
+      "name": "Terra Wave",
+      "id": 120
+    }
+  },
+  "7.9": {
+    "hotkey": "",
+    "type": 2,
+    "spellData": {
+      "mana": 100,
+      "words": "utani gran hur",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        3
+      ],
+      "clip": "160 256 32 32",
+      "cd": 2,
+      "name": "Strong Haste",
+      "id": 39
+    }
+  },
+  "8.6": {
+    "type": 2,
+    "spellData": {
+      "mana": 160,
+      "words": "exevo mas san",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "96 96 32 32",
+      "cd": 4,
+      "name": "Divine Caldera",
+      "id": 124
+    }
+  },
+  "9.2": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3161
+  },
+  "7.2": {
+    "type": 3,
+    "action": 4,
+    "itemId": 3158
+  },
+  "8.2": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3160
+  },
+  "9.7": {
+    "type": 2,
+    "spellData": {
+      "mana": 115,
+      "words": "exori",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "256 32 32 32",
+      "cd": 4,
+      "name": "Berserk",
+      "id": 80
+    }
+  },
+  "9.5": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3202
+  },
+  "9.1": {
+    "type": 3,
+    "action": 4,
+    "itemId": 3155
+  },
+  "7.4": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3176
+  },
+  "8.5": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3149
+  },
   "8.10": {
+    "type": 2,
+    "spellData": {
+      "mana": 50,
+      "id": 81,
+      "clip": "128 320 32 32",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        3
+      ],
+      "words": "exani hur",
+      "cd": 2,
+      "name": "Levitate",
+      "param": "up"
+    }
+  },
+  "8.3": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3192
+  },
+  "9.3": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3191
+  },
+  "8.7": {
+    "hotkey": "",
+    "type": 2,
+    "spellData": {
+      "mana": 20,
+      "words": "exori san",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "64 96 32 32",
+      "cd": 2,
+      "name": "Divine Missile",
+      "id": 122
+    }
+  },
+  "7.3": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3190
+  },
+  "8.11": {
+    "type": 2,
+    "spellData": {
+      "mana": 50,
+      "id": 81,
+      "clip": "128 320 32 32",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "words": "exani hur",
+      "cd": 2,
+      "name": "Levitate",
+      "param": "down"
+    }
+  },
+  "9.6": {
+    "type": 2,
+    "spellData": {
+      "mana": 340,
+      "words": "exori gran",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "288 32 32 32",
+      "cd": 6,
+      "name": "Fierce Berserk",
+      "id": 105
+    }
+  },
+  "9.4": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3175
+  },
+  "8.4": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3173
+  },
+  "9.11": {
+    "type": 2,
+    "spellData": {
+      "mana": 20,
+      "words": "exani tera",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "256 256 32 32",
+      "cd": 2,
+      "name": "Magic Rope",
+      "id": 76
+    }
+  },
+  "7.6": {
+    "type": 2,
+    "spellData": {
+      "mana": 600,
+      "words": "exevo gran mas vis",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "96 128 32 32",
+      "cd": 40,
+      "name": "Rage of the Skies",
+      "id": 119
+    }
+  },
+  "8.1": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3148
+  },
+  "9.10": {
     "type": 2,
     "spellData": {
       "mana": 30,
@@ -15,58 +265,106 @@
       "id": 93
     }
   },
-  "8.7": {
-    "hotkey": "1",
-    "action": 4,
+  "7.1": {
     "type": 3,
-    "itemId": 3161
+    "action": 5,
+    "itemId": 3180
   },
-  "7.8": {
+  "7.11": {
     "type": 2,
-    "hotkey": "2",
     "spellData": {
-      "mana": 20,
-      "words": "exura",
+      "mana": 700,
+      "words": "exevo gran mas tera",
       "source": "/images/game/spells/defaultspells",
       "group": [
-        2
+        1
       ],
-      "clip": "160 0 32 32",
-      "cd": 1,
-      "name": "Light Healing",
-      "id": 1
+      "clip": "352 96 32 32",
+      "cd": 40,
+      "name": "Wrath of Nature",
+      "id": 56
     }
   },
-  "7.9": {
-    "hotkey": "3",
+  "8.8": {
     "type": 2,
     "spellData": {
-      "id": 39,
-      "mana": 100,
+      "mana": 25,
+      "words": "exori con",
       "source": "/images/game/spells/defaultspells",
       "group": [
-        3
+        1
       ],
+      "clip": "160 32 32 32",
       "cd": 2,
-      "clip": "160 256 32 32",
-      "name": "Strong Haste",
-      "words": "utani gran hur"
+      "name": "Ethereal Spear",
+      "id": 111
+    }
+  },
+  "9.8": {
+    "type": 2,
+    "spellData": {
+      "mana": 40,
+      "words": "exori hur",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "192 32 32 32",
+      "cd": 6,
+      "name": "Whirlwind Throw",
+      "id": 107
+    }
+  },
+  "7.10": {
+    "type": 2,
+    "spellData": {
+      "mana": 1050,
+      "words": "exevo gran mas frigo",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "32 128 32 32",
+      "cd": 40,
+      "name": "Eternal Winter",
+      "id": 118
+    }
+  },
+  "7.8": {
+    "hotkey": "",
+    "type": 2,
+    "spellData": {
+      "mana": 170,
+      "words": "exevo vis hur",
+      "source": "/images/game/spells/defaultspells",
+      "group": [
+        1
+      ],
+      "clip": "192 96 32 32",
+      "cd": 8,
+      "name": "Energy Wave",
+      "id": 13
     }
   },
   "7.7": {
     "hotkey": "",
     "type": 2,
     "spellData": {
-      "mana": 25,
-      "words": "exevo flam hur",
+      "mana": 1100,
+      "words": "exevo gran mas flam",
       "source": "/images/game/spells/defaultspells",
       "group": [
         1
       ],
-      "clip": "224 96 32 32",
-      "cd": 4,
-      "name": "Fire Wave",
-      "id": 19
+      "clip": "0 128 32 32",
+      "cd": 40,
+      "name": "Hells Core",
+      "id": 24
     }
+  },
+  "7.5": {
+    "type": 3,
+    "action": 5,
+    "itemId": 3166
   }
 }

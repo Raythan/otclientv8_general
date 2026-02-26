@@ -44,6 +44,7 @@ local luaFiles = {
   "depot_withdraw",
   "eat_food",
   "equip",
+  "cavebot_utils",
   "exeta",
   "analyzer",
   "spy_level",
@@ -728,6 +729,83 @@ end
     -- end
 -- end)
 
+------------------------------------------------------
+local secondsToIdle = 5
+local activeFPS =  20
+---------------------------------------------------------
+
+local afkFPS = 0
+function botPrintMessage(message)
+  modules.game_textmessage.displayGameMessage(message)
+end
+
+local function isSameMousePos(p1,p2)
+  return p1.x == p2.x and p1.y == p2.y
+end
+
+local function setAfk()
+  modules.client_options.setOption("backgroundFrameRate", afkFPS)
+  modules.game_interface.gameMapPanel:hide()
+end
+
+local function setActive()
+  modules.client_options.setOption("backgroundFrameRate", activeFPS)
+  modules.game_interface.gameMapPanel:show()
+end
+
+local lastMousePos = nil
+local finalMousePos = nil
+local idleCount = 0
+local maxIdle = secondsToIdle * 4
+macro(300, "Idle Mode", function()
+  local currentMousePos = g_window.getMousePosition()
+
+  if finalMousePos then
+    if isSameMousePos(finalMousePos,currentMousePos) then return end
+    botPrintMessage("(Idle Mode) Active!")
+    setActive()
+    finalMousePos = nil
+  end
+
+  if lastMousePos and isSameMousePos(lastMousePos,currentMousePos) then
+    idleCount = idleCount + 1
+  else
+    lastMousePos = currentMousePos
+    idleCount = 0
+  end
+
+  if idleCount == maxIdle then
+    botPrintMessage("(Idle Mode) AFK!")
+    setAfk()
+    finalMousePos = currentMousePos
+    idleCount = 0
+  end
+
+end)
+
+local foodNoChaoId = 1722
+
+macro(2000, "Come food no chao: " .. foodNoChaoId, function()
+  local myPos = pos()
+  -- Coloque aqui o ID do item que você quer que o bot dê "use"
+  local targetId = foodNoChaoId
+  
+  for x = -1, 1 do
+    for y = -1, 1 do
+      local tile = g_map.getTile({x = myPos.x + x, y = myPos.y + y, z = myPos.z})
+      
+      if tile then
+        local thing = tile:getTopUseThing()
+        
+        if thing and thing:getId() == targetId then
+          use(thing)
+          delay(800)
+        end
+      end
+    end
+  end
+end)
+
 ----------------------------------------------------------------------
 -- MANA TRAIN 03 (STANDALONE)
 ----------------------------------------------------------------------
@@ -787,6 +865,7 @@ macro(10000, "Close Channels", function()
   modules.game_console.removeTab("QUESTS")
   modules.game_console.removeTab("Loot")
   modules.game_console.removeTab("Death Channel")
+  modules.game_console.removeTab("Help")
 end)
 
 
@@ -809,32 +888,6 @@ function push(x, y)
     g_game.move(thing, pushPos, thing:getCount())
   end
 end
-
-macro(11000, "Say bless with delay", function()
-  if storage.autoBlessMessage:len() > 0 then sayChannel(channel, storage.autoBlessMessage) end
-end)
-
-UI.TextEdit(storage.autoBlessMessage or "!bless", function(widget, text)    
-  storage.autoBlessMessage = text
-end)
-
-macro(400, "Cavebot Check", function()
-    if player:getHealth() == 0 and CaveBot.isOn() then
-		CaveBot.setOff()
-		print("Cavebot desligado: Personagem morreu.")
-    end
-    
-	if storage.caveBot.backOffline and isInPz() and CaveBot.isOn() then
-		CaveBot.setOff()
-		storage.caveBot.backOffline = false
-		print("Cavebot desligado: botão offline pressionado.")
-	end
-	
-    if isInPz() and stamina() < 18 * 60 and CaveBot.isOn() then  -- stamina() retorna a stamina em minutos
-		CaveBot.setOff()
-		print("Cavebot desligado: Stamina abaixo de 18:00 e personagem em PZ.")
-    end
-end)
 
 -- UI.Separator()
 
@@ -939,8 +992,6 @@ macro(3000, "Keep Locker Open", function()
         end
     end
 end)
-
-
 
 UI.Separator()
 UI.Label("Auto Energy Ring")

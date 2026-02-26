@@ -1,6 +1,4 @@
 setDefaultTab("Cave")
-UI.Separator()
-
 local m = macro(100000, "Exeta res when low hp", function() end)
 local lastCast = now
 onCreatureHealthPercentChange(function(creature, healthPercent)

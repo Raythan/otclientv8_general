@@ -16,7 +16,7 @@
     "holdUtura": false,
     "enabled": true,
     "cureParalyse": true,
-    "paralyseSpell": "exura ico",
+    "paralyseSpell": "exana mort",
     "hasteCost": 120,
     "uturaType": "",
     "utamoCost": 40,
@@ -36,42 +36,42 @@
       "itemTable": [
         {
           "item": 7643,
-          "value": 70,
           "index": 1,
-          "enabled": false,
           "origin": "HP%",
+          "enabled": false,
+          "value": 70,
           "sign": "<"
         },
         {
           "index": 2,
           "value": 60,
           "origin": "HP%",
-          "enabled": true,
+          "enabled": false,
           "sign": "<",
           "item": 7643
         },
         {
-          "enabled": true,
-          "origin": "HP%",
+          "enabled": false,
           "value": 80,
-          "item": 239,
           "index": 17,
+          "item": 239,
+          "origin": "HP%",
           "sign": "<"
         },
         {
           "item": 239,
-          "value": 70,
           "index": 3,
-          "enabled": false,
           "origin": "HP%",
+          "enabled": false,
+          "value": 70,
           "sign": "<"
         },
         {
           "item": 239,
-          "value": 60,
           "index": 4,
-          "enabled": false,
           "origin": "HP%",
+          "enabled": true,
+          "value": 60,
           "sign": "<"
         },
         {
@@ -83,91 +83,91 @@
           "item": 236
         },
         {
-          "enabled": true,
-          "value": 85,
+          "enabled": false,
           "origin": "HP%",
-          "item": 236,
           "index": 6,
+          "item": 236,
+          "value": 85,
           "sign": "<"
         },
         {
           "item": 236,
-          "value": 60,
           "index": 7,
-          "enabled": false,
           "origin": "HP%",
+          "enabled": true,
+          "value": 60,
           "sign": "<"
         },
         {
           "sign": "<",
-          "value": 50,
           "index": 12,
-          "item": 236,
           "origin": "HP%",
+          "item": 236,
+          "value": 50,
           "enabled": false
         },
         {
           "index": 8,
           "value": 92,
           "origin": "HP%",
-          "enabled": false,
+          "enabled": true,
           "sign": "<",
           "item": 266
         },
         {
-          "enabled": true,
-          "origin": "MP%",
+          "enabled": false,
           "value": 50,
-          "item": 237,
           "index": 16,
+          "item": 237,
+          "origin": "MP%",
           "sign": "<"
         },
         {
           "item": 268,
-          "value": 75,
           "index": 9,
-          "enabled": false,
           "origin": "MP%",
+          "enabled": false,
+          "value": 75,
           "sign": "<"
         },
         {
           "index": 10,
           "value": 60,
           "origin": "MP%",
-          "enabled": true,
+          "enabled": false,
           "sign": "<",
           "item": 268
         },
         {
-          "enabled": false,
-          "origin": "MP%",
+          "enabled": true,
           "value": 40,
-          "item": 268,
           "index": 15,
+          "item": 268,
+          "origin": "MP%",
           "sign": "<"
         },
         {
           "enabled": false,
-          "origin": "MP%",
           "value": 30,
-          "item": 268,
           "index": 14,
+          "item": 268,
+          "origin": "MP%",
           "sign": "<"
         },
         {
           "enabled": false,
-          "origin": "MP%",
           "value": 20,
-          "item": 268,
           "index": 13,
+          "item": 268,
+          "origin": "MP%",
           "sign": "<"
         },
         {
           "sign": "<",
-          "origin": "MP%",
           "value": 10,
-          "item": 268,
           "index": 11,
+          "item": 268,
+          "origin": "MP%",
           "enabled": false
         }
       ],
@@ -176,30 +176,21 @@
       "Cooldown": true,
       "spellTable": [
         {
-          "enabled": true,
-          "index": 3,
-          "origin": "HP%",
-          "spell": "exura ico",
-          "sign": "<",
-          "value": 80,
-          "cost": 40
-        },
-        {
           "enabled": false,
-          "value": 60,
+          "value": 90,
           "origin": "HP%",
           "sign": "<",
-          "spell": "exura ico",
-          "index": 2,
-          "cost": 40
-        },
-        {
-          "enabled": false,
-          "value": 40,
-          "origin": "HP%",
-          "sign": "<",
-          "spell": "exura ico",
+          "spell": "exana mort",
           "index": 1,
+          "cost": 40
+        },
+        {
+          "enabled": true,
+          "value": 80,
+          "origin": "HP%",
+          "sign": "<",
+          "spell": "exana mort",
+          "index": 2,
           "cost": 40
         }
       ],

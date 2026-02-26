@@ -1,6 +1,6 @@
 {
   "ConditionPanel": {
-    "paralyseSpell": "exura san",
+    "paralyseSpell": "exura vita",
     "curseCost": 80,
     "electrifyCost": 22,
     "ignoreInPz": true,
@@ -10,16 +10,16 @@
     "holdHaste": true,
     "curePosion": false,
     "hasteSpell": "utani hur",
-    "uturaType": "Utura Gran",
     "cureParalyse": true,
+    "curePoison": true,
     "cureBleed": false,
     "holdUtura": false,
     "hasteCost": 60,
-    "curePoison": true,
+    "uturaType": "Utura Gran",
     "cureBurn": false,
     "utamoCost": 40,
     "poisonCost": 20,
-    "enabled": false,
+    "enabled": true,
     "uturaCost": 300,
     "cureElectrify": false,
     "holdUtamo": false,
@@ -36,82 +36,82 @@
       "itemTable": [
         {
           "enabled": false,
-          "index": 1,
-          "origin": "HP%",
-          "sign": "<",
           "value": 50,
+          "index": 1,
+          "sign": "<",
+          "origin": "HP%",
           "item": 7642
         },
         {
           "enabled": false,
-          "index": 5,
-          "origin": "MP%",
-          "sign": "<",
           "value": 40,
+          "index": 5,
+          "sign": "<",
+          "origin": "MP%",
           "item": 7642
         },
         {
           "sign": "<",
-          "origin": "HP%",
-          "value": 80,
-          "item": 236,
           "index": 2,
+          "origin": "HP%",
+          "item": 236,
+          "value": 80,
           "enabled": false
         },
         {
           "enabled": false,
-          "index": 3,
-          "origin": "HP%",
-          "sign": "<",
           "value": 70,
+          "index": 3,
+          "sign": "<",
+          "origin": "HP%",
           "item": 236
         },
         {
           "enabled": false,
-          "value": 60,
-          "index": 4,
-          "item": 236,
           "origin": "HP%",
+          "value": 60,
+          "item": 236,
+          "index": 4,
           "sign": "<"
         },
         {
           "enabled": true,
-          "index": 8,
-          "value": 85,
-          "sign": "<",
           "origin": "HP%",
+          "index": 8,
+          "sign": "<",
+          "value": 85,
           "item": 266
         },
         {
           "enabled": false,
-          "index": 6,
-          "origin": "MP%",
-          "sign": "<",
           "value": 70,
-          "item": 237
-        },
-        {
-          "enabled": false,
-          "index": 7,
-          "origin": "MP%",
+          "index": 6,
           "sign": "<",
-          "value": 50,
-          "item": 237
-        },
-        {
-          "sign": "<",
-          "index": 9,
           "origin": "MP%",
-          "item": 268,
-          "value": 30,
-          "enabled": false
+          "item": 237
         },
         {
           "enabled": true,
           "value": 50,
-          "index": 10,
+          "index": 7,
+          "sign": "<",
+          "origin": "MP%",
+          "item": 237
+        },
+        {
+          "sign": "<",
+          "value": 30,
+          "index": 9,
           "item": 268,
           "origin": "MP%",
+          "enabled": false
+        },
+        {
+          "enabled": true,
+          "origin": "MP%",
+          "value": 50,
+          "item": 268,
+          "index": 10,
           "sign": "<"
         }
       ],
@@ -121,25 +121,7 @@
       "spellTable": [
         {
           "enabled": false,
-          "value": 40,
-          "origin": "HP%",
-          "sign": "<",
-          "spell": "exura gran san",
-          "index": 9,
-          "cost": 210
-        },
-        {
-          "enabled": false,
-          "value": 70,
-          "origin": "HP%",
-          "sign": "<",
-          "spell": "exura gran san",
-          "index": 8,
-          "cost": 210
-        },
-        {
-          "enabled": false,
-          "index": 7,
+          "index": 1,
           "origin": "HP%",
           "spell": "exura san",
           "sign": "<",
@@ -149,8 +131,8 @@
         {
           "spell": "exura san",
           "value": 50,
-          "index": 1,
-          "enabled": false,
+          "index": 2,
+          "enabled": true,
           "sign": "<",
           "origin": "HP%",
           "cost": 210
@@ -158,19 +140,19 @@
         {
           "spell": "exura gran",
           "value": 80,
-          "index": 2,
+          "index": 3,
           "enabled": false,
           "sign": "<",
           "origin": "HP%",
           "cost": 70
         },
         {
-          "enabled": false,
+          "enabled": true,
           "value": 60,
           "origin": "HP%",
           "sign": "<",
           "spell": "exura gran",
-          "index": 6,
+          "index": 4,
           "cost": 70
         },
         {
@@ -179,7 +161,7 @@
           "origin": "HP%",
           "sign": "<",
           "spell": "exura gran",
-          "index": 3,
+          "index": 5,
           "cost": 70
         },
         {
@@ -188,7 +170,7 @@
           "origin": "HP%",
           "sign": "<",
           "spell": "exura",
-          "index": 5,
+          "index": 6,
           "cost": 20
         },
         {
@@ -197,7 +179,7 @@
           "origin": "HP%",
           "sign": "<",
           "spell": "exura",
-          "index": 4,
+          "index": 7,
           "cost": 20
         }
       ],
@@ -211,58 +193,58 @@
       "itemTable": [
         {
           "enabled": false,
-          "index": 3,
-          "origin": "HP%",
-          "sign": "<",
           "value": 80,
+          "index": 3,
+          "sign": "<",
+          "origin": "HP%",
           "item": 7642
         },
         {
           "enabled": false,
-          "index": 2,
-          "origin": "MP%",
-          "sign": "<",
           "value": 75,
+          "index": 2,
+          "sign": "<",
+          "origin": "MP%",
           "item": 7642
         },
         {
           "enabled": false,
+          "origin": "MP%",
           "index": 5,
-          "value": 60,
           "sign": "<",
-          "origin": "MP%",
+          "value": 60,
           "item": 7642
         },
         {
           "enabled": false,
-          "index": 1,
-          "origin": "MP%",
-          "sign": "<",
           "value": 85,
+          "index": 1,
+          "sign": "<",
+          "origin": "MP%",
           "item": 237
         },
         {
           "enabled": true,
-          "index": 6,
-          "origin": "HP%",
-          "sign": "<",
           "value": 60,
+          "index": 6,
+          "sign": "<",
+          "origin": "HP%",
           "item": 236
         },
         {
           "enabled": false,
-          "index": 4,
-          "origin": "HP%",
-          "sign": "<",
           "value": 90,
+          "index": 4,
+          "sign": "<",
+          "origin": "HP%",
           "item": 236
         },
         {
           "enabled": true,
-          "index": 7,
-          "origin": "MP%",
-          "sign": "<",
           "value": 60,
+          "index": 7,
+          "sign": "<",
+          "origin": "MP%",
           "item": 237
         }
       ],
